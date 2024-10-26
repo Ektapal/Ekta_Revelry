@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Management</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="bg">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="navbar-brand">Revelry</div>
+        <button class="navbar-toggle" id="navbarToggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="navbar-menu" id="navbarMenu">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="hero" id="hero">
+        <h1>Bringing Your Events to Life</h1>
+        <p>Your one-stop solution for memorable events!</p>
+        <a href="#contact" class="hero-btn">Get in Touch</a>
+      </section>
+    </div>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <div class="our_outer">
+        <h2>Our Services</h2>
+        <div class="service-list">
+          <div class="service-item">
+            <h3>Weddings</h3>
+            <p>Beautifully crafted weddings to celebrate your special day.</p>
+          </div>
+          <div class="service-item">
+            <h3>Corporate Events</h3>
+            <p>Professional event planning to make your business stand out.</p>
+          </div>
+          <div class="service-item">
+            <h3>Parties</h3>
+            <p>From birthdays to anniversaries, we make it unforgettable!</p>
+          </div>
+        </div>
+        <div class="pi_out">
+          <div class="pi_item"></div>
+          <div class="pi_item"></div>
+          <div class="pi_item"></div>
+          <div class="pi_item"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+      <div class="about_outer">
+        <h2>About Us</h2>
+        <p>
+          We are a passionate team dedicated to delivering high-quality event
+          experiences. Whether it's a wedding, corporate event, or party, we
+          bring creativity, attention to detail, and a commitment to excellence.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="con_outer">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <script>
+      document
+        .getElementById("navbarToggle")
+        .addEventListener("click", function () {
+          const navbarMenu = document.getElementById("navbarMenu");
+          navbarMenu.classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>

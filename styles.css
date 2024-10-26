@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  padding: 10px 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+  font-family: against regular;
+  color: bisque;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-menu li a {
+  color: rgb(252, 252, 252);
+  text-decoration: none;
+}
+.navbar-menu li a:hover {
+  border: 1px solid white;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url("event-bg.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(255, 253, 253);
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 5em;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.hero-btn {
+  padding: 10px 20px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  border: 2px solid white;
+}
+.hero-btn:hover {
+  border: 1px solid white;
+  background-color: #ffffff;
+  color: rgb(109, 40, 139);
+}
+.our_outer {
+  height: 100vh;
+  width: auto;
+  position: relative;
+  /* background-color: #000000; */
+}
+/* .about_outer {
+  height: 100vh;
+  width: auto;
+  position: relative;
+  background-color: #cecdcd;
+  border-radius: 20px;
+}
+.con_outer {
+  background-color: #ffffff;
+}
+
+.services,
+.about,
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.service-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-item {
+  width: 200px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pi_item {
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  background-color: #000000;
+  border-radius: 8px;
+  margin-top: 90px;
+}
+.pi_out {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 50%;
+  margin-left: 25%;
+} */
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 0;
+  }
+
+  .service-list {
+    flex-direction: column;
+  }
+}
+#bg {
+  background-image: url(wed2.jpg);
+  height: 100vh;
+  width: auto;
+  position: relative;
+}
